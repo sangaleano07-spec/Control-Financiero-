@@ -1,0 +1,49 @@
+MI CONTROL FINANCIERO — INSTALACIÓN
+
+ARCHIVOS
+Todos los archivos están directamente en la raíz del ZIP. No hay subcarpetas.
+
+PUBLICAR EN GITHUB PAGES
+1. Crear un repositorio nuevo en GitHub.
+2. Descomprimir este ZIP.
+3. Subir TODOS los archivos directamente a la raíz del repositorio.
+4. En GitHub, abrir Settings > Pages.
+5. En Build and deployment, elegir Deploy from a branch.
+6. Seleccionar la rama main y la carpeta /(root), luego Save.
+7. Esperar la publicación y abrir la URL HTTPS.
+
+INSTALAR EN ANDROID
+1. Abrir la URL publicada en Chrome.
+2. Abrir el menú del navegador.
+3. Elegir "Instalar aplicación" o "Agregar a pantalla principal".
+4. Confirmar.
+
+LOGOTIPO
+Se incluye el símbolo proporcionado como logo.png y se generan iconos PWA a partir de la misma imagen. En Ajustes se puede reemplazar el logotipo; la nueva imagen queda guardada localmente en IndexedDB.
+
+DATOS Y RESPALDOS
+Los registros se guardan en el almacenamiento local del navegador. Exportá periódicamente un respaldo JSON desde Informes. Si se borran los datos del navegador o se cambia de dispositivo, restaurá el respaldo.
+
+INFORMES
+La opción "Imprimir / Guardar PDF" abre el diálogo de impresión del navegador. Elegí "Guardar como PDF".
+
+NOTAS IMPORTANTES
+- Los trabajos se contabilizan desde Trabajos; no dupliques el mismo importe en Ingresos.
+- Los gastos vinculados a trabajos se ingresan en el campo de costos asociados del trabajo, no nuevamente en Gastos.
+- Esta versión es local y no sincroniza datos entre dispositivos.
+- El PIN no está implementado en esta versión; no uses esta app como sistema de seguridad bancaria.
+- Revisá los cálculos con datos de prueba antes de cargar información financiera real.
+
+
+ACTUALIZACIÓN DE IMPRESIÓN
+- Se corrigió la regla CSS que ocultaba el contenedor padre del informe al imprimir.
+- El botón de impresión vuelve a preparar el informe con los registros y fechas seleccionados.
+- Se espera la carga del logotipo antes de abrir la vista de impresión.
+- El formato de impresión se ajustó a papel A4 y permite varias páginas.
+- Se actualizó la caché del Service Worker para instalar esta versión corregida.
+
+IMPORTANTE:
+Al publicar esta versión en GitHub Pages, reemplazá los archivos anteriores por los de este ZIP.
+No borres los datos del almacenamiento del navegador ni desinstales la aplicación anterior.
+Los datos locales normalmente permanecen en el dispositivo si se conserva el mismo origen
+(URL/dominio) de GitHub Pages. De todos modos, hacé un respaldo JSON antes de actualizar.
